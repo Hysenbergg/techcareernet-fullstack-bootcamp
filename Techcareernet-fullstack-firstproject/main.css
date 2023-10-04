@@ -1,0 +1,261 @@
+body {
+  padding-top: 0;
+  padding-left: 17rem;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 17rem;
+  text-align: center;
+  justify-content: center;
+  background-color: #bd5d38;
+}
+.nav-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #ca7d60;
+}
+.nav-image:hover {
+  cursor: pointer;
+}
+.cat-container {
+  list-style-type: none;
+}
+.cat-container li {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.cat-container li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+  color: #e1b6a5;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.cat-container li a:hover {
+  color: white;
+}
+
+.about-section {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-title {
+  font-size: 95px;
+  font-weight: 800;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
+}
+.about-adress {
+  color: #6c757d;
+  font-size: 24px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  font-weight: 500;
+}
+.about-paragraph {
+  font-size: 18px;
+  font-family: "Mulish", sans-serif;
+  color: #6c757d;
+  margin-bottom: 48px;
+  line-height: 1.5;
+}
+.social-icons {
+  color: #6c757d;
+}
+
+.social-icons .social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  width: 56px;
+  background-color: #495057;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  margin-right: 24px;
+  text-decoration: none;
+}
+
+.social-icons .social-icon:hover {
+  background-color: #bd5d38;
+}
+
+.experience-section {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 54px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  margin-bottom: 48px;
+  color: #343a40;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 44px;
+}
+
+.expreience-inner-container {
+  display: flex;
+  flex-direction: column;
+}
+.expreience-inner-container h1 {
+  font-size: 31px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #343a40;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.expreience-inner-container h3 {
+  font-size: 24px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #6c757d;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.expreience-inner-container p{
+    color: #6C757D;
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+.experience-date{
+    flex-shrink: 0;
+}
+.experience-date p{
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+    color: #bd5d38;
+}
+
+.education-section{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-section{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-section h3{
+  font-size: 24px;
+  font-family: "Saira Extra Condensed", sans-serif;
+  color: #6C757D;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.lang-logos{
+  font-size: 48px;
+  display: flex;
+  flex-direction: row;
+  color: #6C757D;
+  margin-bottom: 32px;
+}
+
+.lang-logos i{
+  margin-right: 24px;
+}
+
+.skills-section ul li{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  color: #6C757D;
+  margin-left: 16px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+}
+
+.skills-section ul li i{
+  margin-right: 10px;
+}
+
+.interests-section{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.interests-section p{
+  color: #6C757D;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.awards-section{
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.awards-section ul li{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  color: #6C757D;
+  margin-left: 16px;
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  align-items: center;
+}
+
+.awards-section ul li i{
+  margin-right: 10px;
+}
