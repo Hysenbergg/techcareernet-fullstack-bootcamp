@@ -1,0 +1,16 @@
+.mainDiv{
+    background-color: $primary-color;
+    align-items: center;
+    h1{
+        color: $secondary-color;
+    }
+    h2{
+        font-size: 18px;
+        font-weight: bold;
+        color: $white-color;
+    }
+    p{
+        color: $gray-color;
+        font-family: $primary-font;
+    }
+}

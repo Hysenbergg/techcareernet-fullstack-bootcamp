@@ -1,0 +1,37 @@
+.input-container {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.form-floating {
+  position: relative;
+}
+
+.form-control {
+  padding: 20px 0;
+  height: 3rem;
+  line-height: 1.25rem;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: $white-color;
+  border: 1px solid #ced4da;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.send-button{
+    margin-top: 32px;
+    background-color: #17badb;
+    border-style: none;
+    padding: 20px 32px;
+    color: $white-color;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 0.0625em;
+    font-size: 0.875rem;
+}

@@ -1,0 +1,76 @@
+.mainPostDiv {
+  display: block;
+  padding-left: 48px !important;
+  padding-right: 48px !important;
+  font-family: $primary-font;
+}
+
+.postsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.postsInnerDiv {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.postContainer {
+  display: block;
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+
+    h3{
+      font-weight: 300;
+      margin-bottom: 28px;
+      margin-bottom: 10px;
+    }
+
+    &:hover {
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.post-paragraph{
+  font-family: $secondary-font;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.post-hr{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.post-btn{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+
+  a{
+    text-decoration: none;
+    background-color: $secondary-color;
+    color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}

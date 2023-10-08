@@ -1,0 +1,392 @@
+.mainDiv {
+  background-color: #212529;
+  align-items: center;
+}
+.mainDiv h1 {
+  color: #0085A1;
+}
+.mainDiv h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.mainDiv p {
+  color: #737373;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.mainNav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: transparent;
+  font-family: "Open Sans", sans-serif;
+}
+
+.mainNavDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.title-logo {
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+}
+.category-list li {
+  display: list-item;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.category-list li a {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.category-list li a:hover {
+  color: rgb(216, 216, 216);
+}
+
+.masthead {
+  display: block;
+  position: relative;
+  padding-top: 12.5rem;
+  padding-bottom: 12.5rem;
+  background: no-repeat center center;
+  background-size: cover;
+  background-attachment: scroll;
+  background-color: #6c757d;
+  height: 200px;
+  font-family: "Open Sans", sans-serif;
+}
+.masthead div {
+  position: relative;
+  padding-left: 48px;
+  padding-right: 48px;
+  margin-top: 32px;
+}
+.masthead div div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.masthead div div .site-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.masthead div div .site-heading a {
+  font-size: 80px;
+  margin-bottom: 8px;
+  color: white;
+}
+.masthead div div .site-heading span {
+  display: block;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: white;
+}
+.masthead:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #212529;
+  opacity: 0.5;
+}
+
+.mainPostDiv {
+  display: block;
+  padding-left: 48px !important;
+  padding-right: 48px !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+.postsDiv {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.postsInnerDiv {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.postContainer {
+  display: block;
+}
+.postContainer a {
+  text-decoration: none;
+  color: #212529;
+}
+.postContainer a h2 {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.postContainer a h3 {
+  font-weight: 300;
+  margin-bottom: 28px;
+  margin-bottom: 10px;
+}
+.postContainer a:hover {
+  color: #0085A1;
+  cursor: pointer;
+}
+
+.post-paragraph {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.post-hr {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.post-btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+.post-btn a {
+  text-decoration: none;
+  background-color: #0085A1;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.footer-shell {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.footer-shell {
+  display: flex;
+  padding-left: 48px;
+  padding-right: 48px;
+  justify-content: center;
+}
+
+.footer-div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.footer-div div {
+  color: #737373;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.socialmedia-icons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.social-icons {
+  display: flex;
+  margin-right: 8px;
+}
+.social-icons a {
+  background-color: #212529;
+  width: 52px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  font-size: 28px;
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  background-color: #0085A1;
+}
+
+.about-main-div {
+  padding-top: 24px;
+}
+
+.about-main-inner-div {
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+.about-paragraph-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-paragraph-inner-div {
+  width: 55%;
+}
+.about-paragraph-inner-div p {
+  margin: 32px;
+  font-size: 24px;
+}
+.about-paragraph-inner-div p a {
+  color: #212529;
+}
+
+.gray-paragraph {
+  margin: 32px;
+  font-size: 24px;
+  color: #6c757d;
+}
+
+.about-title {
+  margin-left: 32px;
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.img-fuild {
+  margin: 18px;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.img-caption-text {
+  font-size: 18px;
+  color: #6c757d;
+  text-align: center;
+  margin-left: 54px;
+}
+
+.input-container {
+  margin-top: 48px !important;
+  margin-bottom: 48px !important;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
+.form-floating {
+  position: relative;
+}
+
+.form-control {
+  padding: 20px 0;
+  height: 3rem;
+  line-height: 1.25rem;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.send-button {
+  margin-top: 32px;
+  background-color: #17badb;
+  border-style: none;
+  padding: 20px 32px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.0625em;
+  font-size: 0.875rem;
+}/*# sourceMappingURL=main.css.map */
