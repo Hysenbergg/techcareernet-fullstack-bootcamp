@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Delete Product</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            height: 100vh;
+        }
+
+        .input-container{
+            width: 30%;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title{
+            font-size: 16px;
+            font-weight: 800;
+        }
+
+        .input{
+            border-radius: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+        .delete-btn{
+            background-color: red;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: 800;
+            color: white;
+            margin-top: 30px;
+            border-radius: 15px;
+            border-color: gray;
+            cursor: pointer;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="input-container">
+      <label class="title">Product Id:</label>
+      <input class="input" id="productId" type="text" name="" />
+    </div>
+
+    <div>
+        <button class="delete-btn" onclick="deleteProduct()">Delete Product</button>
+    </div>
+  </body>
+
+  <script>
+    function deleteProduct(){
+        var productId = document.getElementById("productId").value;
+
+        axios.delete("https://northwind.vercel.app/api/products/" + productId)
+            .then(res => {
+                alert("Product deleted successfully");
+            })
+    }
+  </script>
+</html>

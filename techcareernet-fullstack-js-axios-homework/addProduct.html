@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Product Add</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30px;
+            height: 100vh;
+        }
+
+        .input-container{
+            width: 30%;
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title{
+            font-size: 16px;
+            font-weight: 800    ;
+        }
+
+        .input{
+            border-radius: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+
+        .post-btn{
+            background-color: aliceblue;
+            padding: 10px 20px;
+            font-size: 24px;
+            font-weight: 800;
+            color: black;
+            margin-top: 30px;
+            border-radius: 15px;
+            border-color: gray;
+            cursor: pointer;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="input-container">
+      <label class="title">Product Name:</label>
+      <input class="input" id="name" type="text" name="" />
+    </div>
+
+    <div class="input-container">
+      <label class="title">Product's Unit Price:</label>
+      <input class="input" id="unitPrice" type="text" name="" />
+    </div>
+
+    <div class="input-container">
+      <label class="title">Product Units In Stock:</label>
+      <input class="input" id="unitsInStock" type="text" name="" />
+    </div>
+
+    <div class="input-container">
+      <label class="title">Product Category ID:</label>
+      <input class="input" id="categoryId" type="text" name="" />
+    </div>
+
+    <div>
+        <button class="post-btn" onclick="productAdd()">Add</button>
+    </div>
+  </body>
+
+  <script>
+    function productAdd(){
+        var productName = document.getElementById("name").value;
+        var unitPrice = document.getElementById("unitPrice").value;
+        var unitsInStock = document.getElementById("unitsInStock").value;
+        var categoryId = document.getElementById("categoryId").value;
+
+        var newProducts = {
+            name: productName,
+            unitPrice: unitPrice,
+            unitsInStock: unitsInStock,
+            categoryId: categoryId,
+        };
+
+        axios.post("https://northwind.vercel.app/api/products", newProducts)
+            .then(res => {
+                console.log("Product added successfully");
+                console.log(res.data);
+            })
+    }
+  </script>
+</html>
