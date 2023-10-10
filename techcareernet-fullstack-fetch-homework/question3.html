@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question - 3</title>
+</head>
+<body>
+    <ul></ul>
+</body>
+<script>
+    fetch("https://northwind.vercel.app/api/suppliers")
+      .then((res) => res.json())
+      .then((res) => {
+        var supplierData = res;
+        supplierData.forEach(element => {
+            var liElement = document.createElement("li");
+
+            liElement.innerText = element.companyName;
+            document.querySelector("ul").appendChild(liElement);
+        });
+      });
+</script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question - 1</title>
+  </head>
+  <body></body>
+  <script>
+    fetch("https://northwind.vercel.app/api/suppliers")
+      .then((res) => res.json())
+      .then((res) => {
+        var supplierData = res;
+        supplierData.forEach((element) => {
+          if (element.companyName[0] === "M") {
+            console.log(element);
+          }
+        });
+      });
+  </script>
+</html>
