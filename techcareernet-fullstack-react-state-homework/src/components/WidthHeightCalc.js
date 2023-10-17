@@ -5,11 +5,10 @@ function WidthHeightCalc() {
   const [height, setHeight] = useState(100);
 
   const changeSize = () => {
-    // Yeni boyutları almak için state değerlerini kullan
+
     const newWidth = parseInt(document.getElementById("widthInput").value);
     const newHeight = parseInt(document.getElementById("heightInput").value);
 
-    // Yeni boyutları ayarla
     if (!isNaN(newWidth) && !isNaN(newHeight)) {
       setWidth(newWidth);
       setHeight(newHeight);
