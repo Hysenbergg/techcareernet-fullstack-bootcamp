@@ -126,7 +126,7 @@ function App() {
         </Grid>
         <Grid xs={12} style={{ marginTop: "25px", marginLeft: "25px"}}>
           <div>
-            <Button variant="contained" type="submit">Contained</Button>
+            <Button variant="contained" type="submit">Add</Button>
           </div>
         </Grid>
       </Grid>
